@@ -1,0 +1,53 @@
+body{
+margin: 0;
+min-height: 100vh;
+background-color: #FFE7E7;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.급식표-Container{
+width: 850px;
+height: 1610px;
+background-color: rgb(255, 255, 255);
+padding: 50px;
+text-align: center;}
+
+.급식표-Month{
+    height: 50px;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+tbody td{
+    border-style: solid;
+    border-color: black;
+    border-width: 2.5px;
+}
+
+.class-holiday{
+    color: rgb(255, 0, 51);}
+    
+thead th{
+    border-style: solid;
+    border-color: black;
+    border-width: 2.5px;
+    background-color: beige;
+}
+
+tbody th{
+    border-style: solid;
+    border-color: black;
+    border-width: 2.5px;
+}
+
+.class-중식{
+    background-color: rgb(255, 148, 109);
+}
+
+.class-석식{
+    background-color: rgb(133, 176, 255);
+}

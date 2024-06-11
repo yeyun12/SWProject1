@@ -1,0 +1,214 @@
+.container {
+    background-color: rgb(255, 255, 255);
+}
+hr{
+    margin: 0;
+    color: rgb(62, 62, 62);
+    border-bottom: 0.1px;
+}
+body {
+    margin: 0;
+}
+#icon{
+    margin-top:9px;
+    margin-bottom: 6px;
+    margin-right: 3px;
+    width: 15px;
+    height: 15px;
+}
+p {
+    font-size: small;
+    margin-top: 7px;
+    margin-bottom: 0;
+    color: rgb(125, 80, 25);
+}
+.lan{
+    background-color: rgb(235, 255, 233);
+    color: rgb(64, 64, 64);
+    border: none;
+    border-radius: 5px;
+    margin: 3px;
+    font-size: small;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: border 0.2s;
+    box-shadow: 0px 0px 2px #000;
+}
+.lan:hover{
+    border: 2px solid rgb(221, 252, 248);
+    
+}
+.lan:active{
+    color: rgb(81, 182, 182);
+}
+
+.topbar {
+    background-color: #ffffff;
+    justify-content: end;
+    display: flex;
+    height: 30px;
+  
+}
+.middlebar {
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    display: flex;
+    align-content: center;
+}
+.logo {
+    margin-top: 2px;
+    margin-left: 8px;
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    background-image: url(/image/동식.png);
+}
+input[type=search]{
+    margin-top: 15px;
+    margin-left: 8px;
+    width: 330px;
+    height: 50px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    padding: 20px;
+}
+.back{
+    background-color:#fce6e6;
+}
+/*슬라이드 이미지 CSS*/
+.swiper {
+    width: 900px;
+    height: 300px;
+   
+}
+.swiper-scrollbar {
+    background: none;
+}
+:root {
+    --swiper-theme-color: rgb(231, 239, 255);
+}
+
+/*메인 글 div*/
+.main-text{
+    width: 900px;
+    height: 745.2;
+    margin: auto;
+    /* border: solid 1px gray;  */
+  
+}
+/*메인 타이틀*/
+.title {
+    background-color: #ffffff;
+    width: 900px;
+    height: 130px;
+}
+.따봉{
+    width: 90px;
+    height:90px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}   
+
+.child{
+    display: inline-block;
+}
+#추천{
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 50px;
+    line-height: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 16px;
+
+}
+.score{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(255, 46, 46);
+   
+}
+#main-name{
+    margin-bottom: 0px;
+}
+#sub-name {
+    color: gray;
+    margin: 0;
+}
+/*본문 글*/
+.contents-form {
+    display: flex;
+    flex-direction: row;
+    width : 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* justify-content: space-between; */
+}
+
+.explanation {
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    width: 860px;
+    height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+#소개{
+    margin-bottom: 8px;
+}
+/* 본문 설명 */
+.information {
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    width: 55%;
+    height: 450px;
+    padding-left: 20px;
+    padding-right: 10px;
+    /* margin-right: 10px;  */
+}
+
+.information h2 {
+    width: 120px;
+    margin-right: 50px;
+    margin-bottom: 0;
+    color: rgb(70, 70, 70);
+}
+.information h3 {
+    width: 180px;
+}
+
+.menu {
+    margin-left: 176px;
+    margin-top: 0;
+}
+
+
+/* 지도 */
+.map{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    width: 45%;
+    height: 450px;
+    
+    /* padding-left: 20px;
+    padding-right: 10px; */
+} 
+.map-btn{
+    background-color: rgb(101, 235, 145);
+    height: 12%;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.map-btn:hover{
+    background-color: rgb(106, 241, 88);
+}

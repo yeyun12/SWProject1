@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/동식.png" type="image/x-icon">
+    <title>동서대식판:마제소바</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript"
+        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=kvdoeolitr"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <img id="icon" src="/image/느낌표아이콘.png" alt="Icon">
+            <p id="language-text">언어를 선택해주세요</p>
+            <button onclick="한국어폰트()" class="lan" id="ko-btn" type="button">한국어</button>
+            <button onclick="영어폰트()" class="lan" id="en-btn" type="button">English</button>
+            <button onclick="일본어폰트()" class="lan" id="jp-btn" type="button">日本語</button>
+            <button onclick="중국어폰트()" class="lan" id="cn-btn" type="button">中文</button>
+        </div>
+        <hr>
+        <div class="middlebar">
+            <div class="logo"></div>
+            <input id="search-placeholder" type="search" placeholder="오늘은 한식?">
+        </div>
+        <hr>
+        <!-- Slider main container -->
+        <div class="back">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/image/전원일기1.png" alt="1번사진" width="300px" height="300px"></div>
+                    <div class="swiper-slide"><img src="/image/전원일기2.png" alt="2번사진" width="300px" height="300px"></div>
+                    <div class="swiper-slide"><img src="/image/전원일기3.png" alt="3번사진" width="300px" height="300px"></div>
+                    <div class="swiper-slide"><img src="/image/전원일기4.png" alt="4번사진" width="300px" height="300px"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <!-- <hr> -->
+        <div class="main-text">
+            <div class="title">
+                <div class="따봉 child">
+                    <img src="/image/따봉.png" alt="따봉이모지" width="90px" , height="90px">
+                </div>
+                <div class="title-name child">
+                    <div class="name">
+                        <h1 id="main-name" class="child">전원일기</h1>
+                        <span class="score child">4.63</span>
+                        <span id="추천" class="child">HOT</span>
+                        <h2 id="sub-name">동서대 유일 마제소바집</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="explanation">
+                <h2 id="소개">매장 소개</h2>
+                <h4 id="설명">
+                    단체석, 바테이블, 1인석 등 다양한 좌석이 있어 부담없이 방문하기 좋은 마제소바 맛집입니다. 부산엄궁 농산물시장에서 직접 눈으로 보고 구매한 신선한 재료들로 만든 음식을 제공합니다. 맛있는 음식과 친절한 서비스가 일품으로, 단골이 많습니다.
+                </h4>
+            </div>
+            <div class="contents-form">
+                <div class="information child">
+                    <h2 id="영업" class="child" style="color: gray;">영업시간</h2>
+                    <h3 id="시간" class="child" style="width: 250px;">주중 11:30 ~ 20:00</h3>
+                    <h2 id="주차" class="child" style="color: gray;">주차</h2>
+                    <h3 id="가능" class="child">가능</h3>
+                    <h2 id="메뉴" class="child" style="color: gray;">대표메뉴</h2>
+                    <h3 id="경컵" class="child" style="width: 290px">마제소바&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9500원</h3>
+                    <h3 id="치즈" class="child menu" style="width: 280px;">대만가정식덮밥
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp9500원</h3>
+                    <h3 id="제육" class="child menu" style="width: 280px;">튀김어묵우동
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9500원</h3>
+                    <h2 id="주소" class="child" style="color: gray ;">주소</h2>
+                    <h3 id="주소지" class="child adress" style="width: 280px;">부산 사상구 가야대로318번길 74</h3>
+                    <h2 id="전화번호" class="child" style="color: gray;">전화번호</h2>
+                    <h3 class="child">051-326-8006</h3>
+                </div>
+                <div class="map child">
+                    <!-- 기본 지도 -->
+                    <div id="map" style="width:100%;height:88%;border-radius:10px 10px 0 0;"></div>
+                    <script>
+                        var map = new naver.maps.Map('map', {
+                            center: new naver.maps.LatLng(35.14727, 129.007688),
+                            zoom: 17
+                        });
+
+                        var marker = new naver.maps.Marker({
+                            position: new naver.maps.LatLng(35.14727, 129.007688),
+                            map: map
+                        });
+                    </script>
+                    <div class="map-btn">
+                        <h2 id="길안내" style="margin: 0; color: white;">오시는 길</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <script src="./soba.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/동식.png" type="image/x-icon">
+    <title>동서대식판</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="intro_bg">
+            <div class="header" id="link_header">
+                <img src="동식로고.png" alt="로고" width="150px" height="140px">
+                <input type="checkbox" id="layer_popup">
+                <label for="layer_popup">로그인</label>
+                <div id="layer_bg">
+                    <div id="popup">
+                        <h2>로그인<label for="layer_popup">X</label></h2>
+                        <br>
+                        <div class="inputs">
+                            <h5>학번</h5>
+                            <label for="id_input">
+                              <input
+                                type="text"
+                                id="id_input"
+                                placeholder="학번을 입력하세요."/>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <h5>비번</h5>
+                            <label for="id_input">
+                                <input
+                                  type="text"
+                                  id="id_input"
+                                  placeholder="비번을 입력하세요."/>
+                              </label>
+                        </div>
+                        <br>
+                        <div class="inputs">
+                            <button type="submit" class="join_btn" onclick="alert('로그인 성공!')">로그인</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li><a href="#link_header">HOME</a></li>
+                    <li><a href="#link_main_text1">식당</a></li>
+                </ul>
+            </div>
+            <div class="intro_text">
+                <h1><strong>동식</strong><br></h1>
+                <h4><strong>동</strong>서대 <strong>식</strong>판</h4>
+            </div>
+        </div>
+        <!--intro end-->
+        <ul class="list">
+            <li>
+                <div>
+                    <div class="contents1">1</div>
+                    <div class="contents2">뉴밀레니엄관</div>
+                    <button onclick="location.href='뉴밀레니엄관.html'">이동</button >
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">2</div>
+                    <div class="contents2">글로벌빌리지</div>
+                    <button onclick="location.href='글로벌빌리지.html'">이동</button >
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">3</div>
+                    <div class="contents2">경영관</div>
+                    <button onclick="location.href='경영관.html'">이동</button >
+                </div>
+            </li>
+        </ul>
+        <!--HOME end-->
+        <div class="main_text1" id="link_main_text1">
+            <h1 style="margin-bottom: 50px;">식당</h1>
+            <!--식당코드입력-->
+            <div class="contents2">
+                <div class="back-container">
+                    <div class="color-container">
+                        <div>
+                            <h2 style="height: 2px; margin-top: 40px; margin-bottom: 20px;">동서대 주변 맛집이 궁금하다면?</h2>
+                        </div>
+                        <div class="name">
+                            <div class="size">
+                                <a href="/RESTAURANT/main.html">
+                                    <img class="맛집" src="/image/컵밥일러스트.jpg" alt="경대컵밥">
+                                    <div class="overlay">경대컵밥</div>
+                                </a>
+                            </div>
+                            <div class="size">
+                                <a href="/RESTAURANT/soba.html">
+                                    <img class="맛집" src="/image/마제소바일러스트.jpeg" alt="전원일기">
+                                    <div class="overlay">전원일기</div>
+                                </a>
+                            </div>
+                            <div class="size">
+                                <a href="/RESTAURANT/chicken.html">
+                                    <img class="맛집" src="/image/닭칼국수일러스트.jpg" alt="닭다구리">
+                                    <div class="overlay">닭다구리</div>
+                                </a>
+                            </div>
+                            <div class="size">
+                                <a href="">
+                                    <img class="맛집" src="/image/돈까스일러스트.jpg" alt="꼬망">
+                                    <div class="overlay">꼬망</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="name">
+                            <div class="size">
+                                <a href="">
+                                    <img class="맛집" src="/image/부리또일러스트.png" alt="바라또">
+                                    <div class="overlay">BARATO</div>
+                                </a>
+                            </div>
+                            <div class="size">
+                                <a href="">
+                                    <img class="맛집" src="/image/비빔밥일러스트.png" alt="화반">
+                                    <div class="overlay">화반</div>
+                                </a>
+                            </div>
+                            <div class="size">
+                                <a href="">
+                                    <img class="맛집" src="/image/짜장면일러스트.png" alt="황금룡">
+                                    <div class="overlay">황금룡</div>
+                                </a>
+                            </div>
+                            <div class="size">
+                                <a href="">
+                                    <img class="맛집" src="/image/떡볶이일러스트.jpg" alt="개미분식">
+                                    <div class="overlay">개미분식</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--식당 end-->
+        <footer>
+            <div>
+                위치 : 부산광역시 사상구 주례로 47 <br>
+                대표번호 : 051-313-2001~4 <br>
+                COPYRIGHT 2024. ALL RIGHT RESERVED.
+            </div>
+            <img src="동서대로고.png"
+            alt="동서대로고" title="동서대로고">
+        </footer>
+    </div>
+</body>
+</html>
